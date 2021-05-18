@@ -20,7 +20,7 @@ body {
 	font-size: 12px;
 	color: #424242
 }
-/*
+
 .menumobile {
 	background-color: #044033;
 	color: white !important;
@@ -31,6 +31,7 @@ body {
 	padding: 10px;
 	justify-content: space-between
 }
+/*
 .navmobile {
 	background-color: #044033;
 	width: 100%;
@@ -53,6 +54,11 @@ body {
 	text-transform: uppercase;
 	color: white !important
 }
+*/
+.iconmenu{
+    font-size:30px;
+}
+
 .iconmenu a {
 	display: inline-block;
 	text-align: center;
@@ -63,6 +69,7 @@ body {
 	margin: 0;
 	color: white !important
 }
+/*
 .navmobile a {
 	display: inline-block;
 	padding: 0.3em;
@@ -71,10 +78,17 @@ body {
 	text-decoration: none
 }
 */
+/*.header{
+    background-color: #044033;
+
+}*/
+
+
 .nav {
-	background-color: #044033;
+	text-decoration: none;
+    display: flex;
+    background-color: #044033;
 	width: 100%;
-	display: flex;
 	font-weight: 600;
 	font-size: 14px;
 	text-transform: uppercase
