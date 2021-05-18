@@ -40,4 +40,15 @@ main.addEventListener('click', function() {
   drawer.classList.remove('open');
 });
 
+window.addEventListener('scroll', function () {
+  let header = document.querySelector('.nav');
+  let windowPosition = window.scrollY > 600;
+  header. classList.toggle('scrolling-active', windowPosition);
+})
+
+window.addEventListener('scroll', function () {
+  let header = document.querySelector('.menumobile');
+  let windowPosition = window.scrollY > 600;
+  header. classList.toggle('scrolling-active', windowPosition);
+})
 //console.log('Hello Coders! :)');
