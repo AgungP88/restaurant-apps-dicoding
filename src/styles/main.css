@@ -22,7 +22,7 @@ body {
 	color: #424242
 }
 
-.menumobile {
+.menu-mobile {
 	text-decoration: none;
 	overflow: hidden;
 	position: fixed;
@@ -35,35 +35,11 @@ body {
 	padding: 10px;
 	justify-content: space-between
 }
-/*
-.navmobile {
-	background-color: #044033;
-	width: 100%;
-	display: flex;
-	font-weight: 600;
-	font-size: 14px;
-	text-transform: uppercase
-}
-.navlistmobile {
-	width: 60%;
-	padding: 0;
-	margin: 0;
-	text-align: left
-}
-.navitemsmobile {
-	box-sizing: border-box;
-	display: inline-block;
-	text-align: right;
-	line-height: 24px;
-	text-transform: uppercase;
-	color: white !important
-}
-*/
-.iconmenu{
+.icon-menu{
     font-size:30px;
 }
 
-.iconmenu a {
+.icon-menu a {
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
@@ -73,19 +49,6 @@ body {
 	margin: 0;
 	color: white !important
 }
-/*
-.navmobile a {
-	display: inline-block;
-	padding: 0.3em;
-	min-width: 44px;
-	min-height: 44px;
-	text-decoration: none
-}
-*/
-/*.header{
-    background-color: #044033;
-
-}*/
 header{
 	display: inline;
 }
@@ -101,10 +64,11 @@ header{
 	font-size: 14px;
 	text-transform: uppercase;
 	list-style-type: none;
+	z-index: 10;
 }
 
-.navlist {
-	width: 80%;
+.nav-list {
+	width: 100%;
 	padding: 0;
 	margin: 0;
 	text-align: right;
@@ -117,6 +81,10 @@ header{
 	box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
 }
 
+.nav a.logo{
+	max-width: 100%;
+}
+
 .logo {
 	min-height:44px;
 	/*font-size: 44px;*/
@@ -126,23 +94,23 @@ header{
 	box-sizing: border-box;
 	display: inline-block;
 }
-.navitems {
+.nav-items {
 	box-sizing: border-box;
 	display: inline-block;
 	text-align: right;
 	line-height: 24px;
-	font-size: 24px;
+	font-size: 20px;
 	text-transform: uppercase
 }
 .nav a {
 	display: inline-block;
 	padding: 24px;
 	text-decoration: none;
-	color: white !important
+	color: white ;
 }
 .nav a:hover {
 	text-decoration: underline;
-    color: #000;
+    color: #f5a33e;
 }
 
 .hero {
@@ -164,7 +132,7 @@ header{
 .title-hero {
 	color: #fff;
 	font-weight: 600;
-	font-size: 36px;
+	font-size: 42px;
 	text-shadow: 1px 1px #141414
 }
 .subtitle-hero {
@@ -173,6 +141,30 @@ header{
 	font-size: 18px;
 	font-weight: 600;
 	text-shadow: 1px 1px #141414
+}
+
+.btn-jumbotron{
+	font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 24px;
+    cursor: pointer;
+	color: white;
+	text-decoration: none;
+    padding: 8px 16px;
+    border: 3px solid rgba(245, 163, 62, 0.2);
+    border-radius: 10px;
+    background-color: rgba(245, 163, 62, 0.7);
+    transition: opacity 0.3s;
+}
+
+.btn-jumbotron a{
+	color: white;
+	text-decoration: none;
+}
+
+.btn-jumbotron:hover{
+	background-color: rgba(245, 163, 62, 1);
+	border: 3px solid rgba(245, 163, 62, 1);
 }
 
 main {
@@ -188,10 +180,18 @@ main {
 	margin-bottom: 50px;
 	text-align: center
 }
-.latest h1 {
+.latest h3 {
 	font-weight: 500;
-	font-size: 1.5em;
-	margin-bottom: 50px;
+	font-size: 1.8em;
+	margin-bottom: 25px;
+	min-width: 44px;
+	min-height: 44px;
+}
+
+.latest h2 {
+	font-weight: 500;
+	font-size: 2.5em;
+	margin-bottom: 25px;
 	min-width: 44px;
 	min-height: 44px;
 }
@@ -206,17 +206,22 @@ main {
 	width: 100%;
 	border-radius: 5px;
 	overflow: hidden;
-	position: relative
+	position: relative;
 }
-.ratings {
+.cities {
 	position: absolute;
 	top: 8px;
 	left: 16px;
 	border-radius: 5px;
 	background-color: black;
 	padding: 5px 10px 5px;
-	color: yellow;
-	font-weight: 400
+	color: #f5a33e;
+	font-weight: 400;
+}
+.ratings{
+	font-size: 15px;
+	padding-bottom: 10px;
+	color: rgb(251, 140, 1);
 }
 .list_content {
 	padding: 12px
@@ -230,7 +235,7 @@ main {
 	transition: 0.5s opacity
 }
 .list_item_title:hover {
-	color: blue;
+	color: #f5a33e;
 }
 .list_item_title a {
 	display: inline-block;
@@ -249,8 +254,8 @@ main {
 	line-height: 1.5em
 }
 footer {
-	background-color: #044033;
-	color: white;
+	background-color: black;
+	color: #f5a33e;
 	font-size: 14px;
 	padding: 2em;
 	width: 100%;
@@ -269,4 +274,12 @@ footer {
 }
 .skip-link:focus {
 	top: 100px
+}
+
+#selengkapnya{
+	display: none;
+}
+.open2{
+	display: block;
+	position: relative;
 }

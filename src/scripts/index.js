@@ -2,6 +2,7 @@ import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/responsive.css';
 
+//Get Data from json and using DOM manipulation
 import('../DATA.json').then(({
     default: jsonData
 }) => {
@@ -11,15 +12,16 @@ import('../DATA.json').then(({
         listResto += `
         <div class="list_item">
         <img class="list_thumbnail" src="${resto['pictureId']}" alt="${resto['name']}" title="${resto['name']}">
-        <div class="ratings">Rating : ${resto['rating']} / 5</div>
+        <div class="cities">Kota : ${resto['city']}</div>
         <div class="list_content">
-            <h1 class="list_item_title"><a href="#">${resto['name']} - ${resto['city']}</a></h1>
+            <p class="ratings">Rating : ${resto['rating']}</p>
+            <h3 class="list_item_title"><a href="#">${resto['name']}</a></h3>
             <div class="list_item_desc">Description : ${resto['description'].slice(0, 111)}...</div>
         </div>
     </div>
         `;
     });
-    document.querySelector('#RestaurantCatalog').innerHTML = listResto;
+    document.querySelector('#restaurant-catalog').innerHTML = listResto;
 })
 
 const menu = document.querySelector('#menu');
@@ -47,8 +49,18 @@ window.addEventListener('scroll', function () {
 })
 
 window.addEventListener('scroll', function () {
-  let header = document.querySelector('.menumobile');
+  let header = document.querySelector('.menu-mobile');
   let windowPosition = window.scrollY > 600;
   header. classList.toggle('scrolling-active', windowPosition);
 })
-//console.log('Hello Coders! :)');
+
+/*let batasText = document.querySelector("#batasText");
+let selengkapnyaText = document.querySelector("#selengkapnya");
+let btnReadmore = document.querySelector("#btnReadmore");
+
+btnReadmore.addEventListener('click', function() {
+  selengkapnyaText.classList.toggle('open');
+  event.stopPropagation();
+})*/
+
+
