@@ -326,6 +326,7 @@ footer {
   
   .detail-page article .resto-name {
 	font-size: 5vmax;
+	text-align: center;
   }
   
   .detail-page article .rating-detail {
@@ -348,6 +349,7 @@ footer {
 	font-style: italic;
 	font-weight: bold;
 	margin-bottom: 5px;
+	margin-top: 10px;
   }
   
   .detail-page article p .drinks {
