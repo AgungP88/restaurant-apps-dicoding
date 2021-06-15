@@ -5,6 +5,9 @@ const CONFIG = {
   DEFAULT_LANGUAGE: 'en-us',
   API_KEY: '12345',
   CACHE_NAME: 'Trusty Resto Apps PWA',
+  DATABASE_NAME: 'trusty-resto-database',
+  DATABASE_VERSION: 1,
+  OBJECT_STORE_NAME: 'restaurants',
 };
 
 export default CONFIG;

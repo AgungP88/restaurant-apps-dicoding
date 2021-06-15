@@ -1,13 +1,25 @@
 /* eslint-disable linebreak-style */
+import FavoriteResto from '../../data/database-resto';
+import { createRestoItemTemplate } from '../templates/template-creator';
+
 const Favorite = {
   async render() {
     return `
-          <h2>Favorite Page</h2>
+    <section class="content">
+    <div class="latest">
+        <h2>Explore Restaurant</h2>
+        <div class="list" id="restaurant-catalog"></div>
+    </div>
+    </section>
         `;
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    const restos = await FavoriteResto.getAllResto();
+    const restoContainer = document.querySelector('#restaurant-catalog');
+    restos.forEach((resto) => {
+      restoContainer.innerHTML += createRestoItemTemplate(resto);
+    });
   },
 };
 

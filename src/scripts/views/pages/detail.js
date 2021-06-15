@@ -3,12 +3,14 @@
 import UrlParser from '../../routes/url-parser';
 import RestaurantSource from '../../data/restaurant-source';
 import { createRestoDetailTemplate } from '../templates/template-creator';
+import LikeButtonInitiator from '../../utils/like-button-initiator';
 
 const Detail = {
   async render() {
     return `
         <h2 class="title">Detail Page</h2>
         <section class="content"></section>
+        <div id="likeButtonContainer"></div>
       `;
   },
 
@@ -18,6 +20,11 @@ const Detail = {
     const restoranContainer = document.querySelector('.content');
     restoranContainer.classList.add('detail-page');
     restoranContainer.innerHTML += createRestoDetailTemplate(restaurant);
+
+    LikeButtonInitiator.init({
+      likeButtonContainer: document.querySelector('#likeButtonContainer'),
+      resto: restaurant,
+    });
     // console.log(restaurant);
 
     // TODO: tampilkan movie di dalam DOM
