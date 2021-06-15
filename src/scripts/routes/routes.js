@@ -4,7 +4,7 @@ import Detail from '../views/pages/detail';
 import Favorite from '../views/pages/favorite';
 
 const routes = {
-  '': ListResto, // Default Pages
+  '/': ListResto, // Default Pages
   '/list': ListResto,
   '/detail/:id': Detail,
   '/favorite': Favorite,
