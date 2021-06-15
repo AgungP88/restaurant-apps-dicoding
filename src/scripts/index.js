@@ -3,7 +3,6 @@ import '../styles/main.css';
 import '../styles/responsive.css';
 import App from './views/app';
 import swRegister from './utils/sw-register';
-
 // Get Data from json and using DOM manipulation
 
 const app = new App({
