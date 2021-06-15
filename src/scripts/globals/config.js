@@ -4,6 +4,7 @@ const CONFIG = {
   BASE_IMAGE_URL: 'https://restaurant-api.dicoding.dev/images/medium/',
   DEFAULT_LANGUAGE: 'en-us',
   API_KEY: '12345',
+  CACHE_NAME: 'Trusty Resto Apps PWA',
 };
 
 export default CONFIG;
