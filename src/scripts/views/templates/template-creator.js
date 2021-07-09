@@ -4,7 +4,7 @@ import CONFIG from '../../globals/config';
 
 const createRestoItemTemplate = (resto) => `
 <div class="list_item">
-  <img class="list_thumbnail" src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" alt="${resto.name}" title="${resto.name}">
+  <img class="list_thumbnail lazyload" data-src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}" alt="${resto.name}" title="${resto.name}">
   <div class="cities">Kota : ${resto.city}</div>
   <div class="list_content">
     <p class="ratings">Rating : ${resto.rating}/5</p>
