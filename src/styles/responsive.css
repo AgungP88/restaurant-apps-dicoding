@@ -34,6 +34,18 @@
 		text-align: left
         
 	}
+	.hero {
+		display: flex;
+		align-items: center;
+		min-height: 400px;
+		width: 100%;
+		text-align: center;
+		background-position: center;
+		background-color: Black !important;
+		background: linear-gradient(rgba(1, 1, 6, .3), rgba(1, 1, 6, .3)), url('/images/heros/hero-image_4-small.jpg'); 
+		background-repeat: no-repeat; 
+		background-size: auto;
+	}
 }
 /*tablet Responsive*/
 @media screen and (min-width: 650px) {
